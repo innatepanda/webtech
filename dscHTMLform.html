@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link >
+    <link rel="stylesheet" href="stylesheet.css">
     <title>1905228 html form</title>
 </head>
-<body style="margin-left:10%">
+<body style="margin-left:10%;">
     <header style="margin-left:10%;margin-top:5%">
         <h2>Please enter your details below</h2><br>
         <img src="icon.png" width=100px>
         <form style="margin-top:-105px; margin-left:120px">
-        First Name:   <input type="text" maxlength="5"></input><br>
-        Last Name:   <input type="text" maxlength="5"></input><br>
-        Email: <input type="email"><br>
-        Username: <input type="text" maxlength="20" ></input><br>
-        Password: <input type="password" maxlength="6" ><br>
-        Date: <input type="date"><br>
-        Age: <input type="number"><br><br>
-        <input type="reset"><input type="submit">
+        <p><label>First Name:   </label><input type="text" maxlength="5" class="fields" placeholder="first name"></input><br></p>
+        <p><label>Last Name:  </label> <input type="text" maxlength="5" class="fields" placeholder="last name"></input><br></p>
+        <p><label>Email: </label><input type="email" class="fields" placeholder="placeholder"><br></p>
+        <p><label>Username:</label> <input type="text" maxlength="20" class="fields" placeholder="placeholder"></input><br></p>
+        <p><label>Password:</label> <input type="password" maxlength="6" class="fields" placeholder="placeholder"><br></p>
+        <p><label>Date: </label><input type="date" class="fields" style="width:76%"><br></p>
+        <p><label>Age:</label> <input type="number" class="fields" placeholder="placeholder"><br><br></p>
+        <input type="reset" class="button" id="button2"><input type="submit" class="button" id="button1">
         </form>       
     </header>
-
-    <table style="background-color: lightgray;border:black 1px solid;padding:5px; margin-top:-150px; margin-left:60%; margin-bottom:100px">
+<div style="display:flex; margin-top:30px; width:1000px">
+    <div class="d1"> <video style="width:80%; margin-left:10%" controls > <source src="video.mp4" type="video/mp4">
+    </video></div>
+    <div class="d2">
+    <table>
         <tr>
             <th style="border:black 1px solid">Month</th>
             <th style="border:black 1px solid">Users</th>
@@ -46,10 +49,10 @@
             <td>April</td>
             <td>180</td>
             </tr>
-      </table>
+        </table>
+    </div>
 
-      <video style="width:700px; margin-left:10%" controls > <source src="video.mp4" type="video/mp4">
-      </video>
+   </div>
 
     <footer style="font-size:11px; margin-left:60%;margin-bottom:20px">
         Made by: <a href="https://github.com/innatepanda">1905228 Anwesha</a><br>

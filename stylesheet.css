@@ -2,3 +2,47 @@ body{
     background-color: black;
     color: aliceblue;
 }
+
+table{
+    background-color: lightgray;
+    border:black 1px solid;
+    padding:5px; 
+    color: black;
+}
+form{
+    display: table;
+    width: 400px;
+}
+.d1
+{
+    flex:2;
+}
+.d2
+{
+    flex:1;
+}
+p{
+    display: table-row;
+}
+label{
+    display: table-cell;
+}
+.fields
+{
+   display:table-cell;
+}
+.button
+{
+    margin:5px;
+    border-radius: 20px;
+    padding:5px 10px;
+    background-color: grey;
+}
+#button1:hover
+{
+    background-color: green;
+}
+#button2:hover
+{
+    background-color:red;
+}
