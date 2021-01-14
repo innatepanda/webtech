@@ -1,0 +1,39 @@
+body{
+    background: #C33764;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: "yeon sung", sans-serif;
+    margin:0px;
+}
+header{
+    font-size:5vh;
+}
+header, form{
+    min-height:5vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+form{
+    min-width:70vh;
+}
+form input, form button{
+    border: none;
+    font-size: 2rem;
+    padding:0.5rem;
+    background-color: white;
+}
+form button{
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #1D2671;
+}
+form button:hover{
+    background-color: #1D2671;
+    color: white;
+
+}
