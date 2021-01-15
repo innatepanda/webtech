@@ -5,6 +5,7 @@ const list=document.querySelector('.todo_list')
 button.addEventListener("click", add);
 
 
+
 function add(event)
 {
     
@@ -14,7 +15,8 @@ function add(event)
     {alert("cannot be empty");
     return;}
     const div=document.createElement('div');
-    div.classList.add("todo");
+    div.classList.add("todo")
+    
     const li=document.createElement('li');
     li.innerText= input.value;
     input.value="";
@@ -40,5 +42,6 @@ function add(event)
 function deleteFunc(event)
 {
     event.preventDefault();
-    
+    const item=event.target;
+
 }
