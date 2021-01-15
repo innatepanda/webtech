@@ -12,9 +12,11 @@ function add(event)
     
     event.preventDefault();
     if(input.value=="")
-    {alert("cannot be empty");
+    {alert("cannot be empty"); //create something here
     return;}
-    const div=document.createElement('div');
+
+
+    const div=document.createElement('div'); //add css later
     div.classList.add("todo")
     
     const li=document.createElement('li');
