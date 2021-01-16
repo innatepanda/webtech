@@ -1,15 +1,17 @@
 const input=document.querySelector('.todo_input')
 const button=document.querySelector('.submit_button')
 const list=document.querySelector('.todo_list')
-const mainbtn=document.querySelector('.main_submit')
+const mainbtn=document.querySelector('.main_submit');
+const comp=document.querySelector('.completed_list');
 button.addEventListener("click", add);
 mainbtn.addEventListener("click", submit);
 
-function submit(event){
+
+function submit(){
     //event.preventDefault();
     //const namev=document.querySelector('.name');
-    
-    window.location.href='http://stackoverflow.com';
+    alert("submit");
+    //location.href='http://stackoverflow.com';
     //const he=document.querySelector('.header');
     //he.innerText=name.value+" ,Welcome";
 }
@@ -48,7 +50,7 @@ function add(event)
 
     div.appendChild(checked);
     div.appendChild(trash);
-    
+    //comp.appendChild(div);
     list.appendChild(div);
 
 
@@ -59,15 +61,26 @@ function deleteFunc(event)
     const item=event.target;
     if(item.classList[0]=="delete_btn")
     {
+        
         const parent=item.parentElement;
+        
         parent.remove();
     }
     if(item.classList[0]=="completed_btn")
     {
-        const parent=item.parentElement;
+        const parent=item.parentNode;
         parent.classList.toggle("completed");
+        
+        if(parent.classList[1]=="completed")
+        {comp.appendChild(parent);}
+        else
+        {
+            list.appendChild(parent);
+        }
+    
         
     }
 
+    
 
 }
