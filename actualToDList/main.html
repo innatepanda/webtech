@@ -1,40 +1,28 @@
 <!DOCTYPE html>
-<!--**ToDo
-    * input name eg "Anne's todo list"
-    * save as txt?
-    * add pageviewing, eg 10lists on one page then page change fetch another 
-    
-    
--->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
 integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-
+    <title>ToDo list</title>
 </head>
 <body>
-    <header>
-        <h1>
-            ToDo List
-        </h1>
-    </header>
-    <form>
-        <input type="text" class="todo_input">
-        <button type="submit" class="submit_button">
-            <i class="fa fa-plus-square" aria-hidden="true"></i></i>
-        </button>
-    </form>
-    <div class="container">
-        <ul class="todo_list">            
-        </ul>
-    </div>
+    
+        <header>
+            <h1>
+                ToDo List
+            </h1>
+        </header>
 
+    <h4 >please enter your name</h4>
+    <form >
+    <input type="text" class="name" required placeholder="enter name"><br>
+    <button type="button" class="main_submit" ><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+</form>
     <script src="app.js"></script>
 </body>
 </html>
